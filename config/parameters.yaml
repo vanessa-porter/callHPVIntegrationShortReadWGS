@@ -1,0 +1,5 @@
+### Genome version considerations
+
+# genome_name should match bams
+genome_path: "/path/to/reference/fasta"
+

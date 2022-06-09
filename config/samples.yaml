@@ -1,0 +1,5 @@
+# sample name must match the sample ID on the RPKM matrix
+samples:
+    HTMCP-03-06-02058:
+        tumour:
+            /path/to/bam
