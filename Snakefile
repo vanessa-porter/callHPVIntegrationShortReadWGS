@@ -6,7 +6,7 @@ configfile: "config/parameters.yaml"
 genome_path = config["genome_path"]
 
 # samples
-samples_dict = config["samples"]
+samples_dict = config["bams"]
 sample_ids = samples_dict.keys()
 
 ### -------------------------------------------------------------------
@@ -14,7 +14,7 @@ sample_ids = samples_dict.keys()
 ### -------------------------------------------------------------------
 rule all:
     input:
-	    expand("output/{sample}/integration_sites.bed", sample=sample_ids)
+	    expand("output/{sample}/.int/il_integration_events.bed", sample=sample_ids)
 
 ### -------------------------------------------------------------------
 ### Rules
@@ -22,7 +22,7 @@ rule all:
 
 rule run_manta:
     input:
-        tumour = lambda w: config["samples"][w.sample]["tumour"],
+        tumour = lambda w: config["bams"][w.sample],
         ref = genome_path
     output:
         "output/{sample}/manta/results/variants/candidateSV.vcf.gz"
@@ -65,12 +65,34 @@ rule make_bed:
     conda: "config/conda.yaml"
     shell:
         """
-        cat {input} | grep -v "#" | cut -f 1,2 > {output}
+        cat {input} | grep -v "#" | cut -f 1,2 | awk '{{print $1"\t"$2"\t"$2+1}}' > {output}
+        """
+
+rule name_sites:
+    input:
+        "output/{sample}/int/hpvintSites.bed"
+    output:
+        "output/{sample}/il_integration_sites.bed"
+    conda: "config/conda.yaml"
+    shell:
+        """
+        scripts/hpvSiteName.R --bed={input} --out={output}
+        """
+
+rule make_events:
+    input:
+        "output/{sample}/il_integration_sites.bed"
+    output:
+        "output/{sample}/int/integration_events.bed"
+    conda: "config/conda.yaml"
+    shell:
+        """
+        bedtools merge -d 500000 -o collapse -c 4 -i {input} > {output}
         """
 
 rule site_depth:
     input:
-        tumour = lambda w: config["samples"][w.sample]["tumour"],
+        tumour = lambda w: config["bams"][w.sample],
         sites = "output/{sample}/int/hpvintSites.bed"
     output:
         "output/{sample}/int/hpvSitesDepth.txt"
@@ -83,11 +105,24 @@ rule site_depth:
 rule summary:
     input:
         vcf = "output/{sample}/int/hpvIntFilt.vcf",
-        depth = "output/{sample}/int/hpvSitesDepth.txt"
+        depth = "output/{sample}/int/hpvSitesDepth.txt", 
+        bed = "output/{sample}/int/integration_events.bed"
     output:
-        "output/{sample}/integration_sites.bed"
+        "output/{sample}/il_integration_events.bed"
     conda: "config/conda.yaml"
     shell:
         """
-        scripts/intSummary.R --vcf {input.vcf} --depth {input.depth} --outdir output/{wildcards.sample}
+        scripts/intSummary.R --vcf {input.vcf} --bed={input.bed} --depth {input.depth} --outdir output/{wildcards.sample}
+        """
+
+rule mv_other_files:
+    input:
+        "output/{sample}/il_integration_events.bed"
+    output:
+        "output/{sample}/.int/il_integration_events.bed"
+    conda: "config/conda.yaml"
+    shell:
+        """
+        mv output/{wildcards.sample}/int output/{wildcards.sample}/.int
+        touch {output}
         """
