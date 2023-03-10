@@ -1,0 +1,41 @@
+bams:
+  HTMCP-03-06-02006:
+    dna: /projects/analysis/analysis34/A37239/merge81192_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37239_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F47778/clair_3_0_1/clair_3_0_1_F47778/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37164/merge81191_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37164_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37704/merge78455_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37704_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02012:
+    dna: /projects/analysis/analysis34/A37243/merge81194_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37243_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F79971/clair_3_0_1/clair_3_0_1_F79971/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37164/merge81191_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37164_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37707/merge78471_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37707_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02020:
+    dna: /projects/analysis/analysis34/A37247/merge81195_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37247_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F69170/clair_3_0_1/clair_3_0_1_F69170/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A56468/merge81196_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/
+    rna: /projects/analysis/analysis33/A37710/merge78457_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37710_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02036:
+    dna: /projects/analysis/analysis34/A37252/merge81198_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37252_4_lanes_dupsFlagged.bam
+    normal: /projects/analysis/analysis34/A37179/merge81197_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37179_2_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F47777/clair_3_0_1/clair_3_0_1_F47777/phased_merge_output.vcf.gz
+    rna: /projects/analysis/analysis33/A37714/merge78456_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37714_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02040:
+    dna: /projects/analysis/analysis34/A37254/merge81200_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37254_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F47779/clair_3_0_1/clair_3_0_1_F47779/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37181/merge81199_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37181_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37716/merge78527_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37716_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02054:
+    dna: /projects/analysis/analysis34/A37259/merge81202_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37259_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F79972/clair_3_0_1/clair_3_0_1_F79972/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37187/merge81201_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37187_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37720/merge78458_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37720_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02058:
+    dna: /projects/analysis/analysis32/A37261/merge78088_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37261_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/D77540_D81468/clair_3_0_1/clair_3_0_1_D77540_D81468/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37189/merge81203_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37189_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37722/merge78451_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37722_1_lane_dupsFlagged.bam
+  HTMCP-03-06-02063:
+    dna: /projects/analysis/analysis34/A37266/merge81205_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37266_4_lanes_dupsFlagged.bam
+    phase: /projects/hpv_nanopore_prj2/htmcp/lims_fnn/F46078/clair_3_0_1/clair_3_0_1_F46078/phased_merge_output.vcf.gz
+    normal: /projects/analysis/analysis34/A37194/merge81204_mmp2-2.15/125bp/hg38_no_alt_TCGA_HTMCP_HPVs/A37194_2_lanes_dupsFlagged.bam
+    rna: /projects/analysis/analysis33/A37725/merge78452_star-2.5.2b-XSv1-sb0.7.1/75bp/hg38_no_alt_TCGA_HTMCP_HPVs_ensembl100_gsc_v1/A37725_1_lane_dupsFlagged.bam
