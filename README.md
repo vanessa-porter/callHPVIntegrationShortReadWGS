@@ -12,7 +12,7 @@ git clone https://github.com/bcgsc/IMPALA.git
 
 # Input Files
 
-### **Method 1**: Whole genome short reads <br />
+### **Method 1**: Whole genome <br />
 - WGS alignment (bam file)
 
 ### **Method 2**: RNA-seq <br />
