@@ -39,7 +39,7 @@ bams:
     sampleName_2: /path/to/bam/file
 ```
 
-# Converting sample paths to yaml file
+#### Converting sample paths to yaml file
 A text file can be converted to the samples.yaml file using the scripts/sampletsvtoyaml.py script. The tsv file should have the sample name in one column and the path in another and be tab delimited (no header). 
 
 ```
