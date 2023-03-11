@@ -8,7 +8,7 @@ git clone https://github.com/vanessa-porter/illuminaCallHPVInt
 ```
 
 ### Dependencies
-> To run this workflow, you must have snakemake (v6.12.3) and singularity (v3.5.2-1.1.el7). You can install snakemake using [this guide](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html) and singularity using [this guide](https://docs.sylabs.io/guides/3.5/admin-guide/installation.html). The remaining dependencies will be downloaded automatically within the snakemake workflow.
+> To run this workflow, you must have snakemake (v6.12.3) and conda. You can install snakemake using [this guide](https://snakemake.readthedocs.io/en/stable/getting_started/installation.html). The remaining dependencies will be downloaded automatically within the snakemake workflow.
 
 # Input Files
 
