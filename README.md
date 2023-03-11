@@ -4,7 +4,7 @@ Workflow for calling HPV integration sites and events in Illumina short-read seq
 # Installation
 This will clone the repository. You can run the IMPALA within this directory.
 ```
-git clone https://github.com/bcgsc/IMPALA.git
+git clone https://github.com/vanessa-porter/illuminaCallHPVInt
 ```
 
 ### Dependencies
