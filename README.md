@@ -1,4 +1,4 @@
-# illuminaCallHPVInt
+# Calling HPV Integration Using Illumina Short-Read Sequencing
 Workflow for calling HPV integration sites and events in Illumina short-read sequencing data. 
 
 # Installation
