@@ -12,10 +12,10 @@ git clone https://github.com/bcgsc/IMPALA.git
 
 # Input Files
 
-### **Method 1**<sup>†</sup>: Whole genome short reads: <br />
+### **Method 1**: Whole genome short reads <br />
 - WGS alignment (bam file)
 
-### **Method 2**<sup>§</sup>: RNA-seq: <br />
+### **Method 2**: RNA-seq <br />
 - RNA alignment (bam file)
 
 # Running Workflow
@@ -23,10 +23,11 @@ git clone https://github.com/bcgsc/IMPALA.git
 ### **Edit the config files**
 
 #### **Example parameters.yaml:** <br />
-Config files to specify parameters and paths needed for the workflow. The main parameter to include is the genome name, path to expression matrix, major allele frequency threshold and threads as well as settings for using phased vcf and doing cancer analysis.
+Config files to specify parameters and paths needed for the workflow. The main parameter to include is the genome path.
 
-# genome should match bams
+```
 genome_path: /path/to/genome/fasta
+```
 
 #### **Example samples.yaml:** <br />
 Main config file to specify input files.
