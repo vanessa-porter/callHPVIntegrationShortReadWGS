@@ -24,7 +24,7 @@ git clone https://github.com/bcgsc/IMPALA.git
 
 #### **Example parameters.yaml:** <br />
 Config files to specify parameters and paths needed for the workflow. The main parameter to include is the genome name, path to expression matrix, major allele frequency threshold and threads as well as settings for using phased vcf and doing cancer analysis.
-```
+
 # genome should match bams
 genome_path: /path/to/genome/fasta
 
