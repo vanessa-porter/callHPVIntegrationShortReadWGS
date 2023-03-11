@@ -17,6 +17,7 @@ git clone https://github.com/bcgsc/IMPALA.git
 
 ### **Method 2**: RNA-seq <br />
 - RNA alignment (bam file)
+- Use RNA branch for RNA-seq for now
 
 # Running Workflow
 
