@@ -2,7 +2,7 @@
 Workflow for calling HPV integration sites and events in Illumina short-read sequencing data. 
 
 # Installation
-This will clone the repository. You can run the IMPALA within this directory.
+This will clone the repository. You can run workflow within this directory.
 ```
 git clone https://github.com/vanessa-porter/illuminaCallHPVInt
 ```
