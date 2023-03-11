@@ -19,7 +19,7 @@ git clone https://github.com/vanessa-porter/illuminaCallHPVInt
 - RNA alignment (bam file)
 - Use RNA branch for RNA-seq for now
 
-# Running Workflow
+# Set Up Configuration Files
 
 ### **Edit the config files**
 
@@ -46,8 +46,8 @@ A text file can be converted to the samples.yaml file using the scripts/samplets
 scripts/sampletsvtoyaml.py -t samples.txt -o config/samples.yaml
 ```
 
-### **Run snakemake**
-This is the command to run it with conda. The `-c` parameter can be used to specify maximum number of threads. 
+# **Run Workflow**
+This is the command to run the workflow with snakemake using conda. The `-c` parameter can be used to specify maximum number of threads. 
 
 ```
 snakemake -c 30 --use-conda
