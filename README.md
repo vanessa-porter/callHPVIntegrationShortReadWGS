@@ -52,3 +52,9 @@ This is the command to run the workflow with snakemake using conda. The `-c` par
 ```
 snakemake -c 30 --use-conda
 ```
+
+# Contributors
+The contributors of this project are Vanessa Porter
+
+<a href="https://github.com/vanessa-porter/illuminaCallHPVInt/graphs/contributors">
+</a>
